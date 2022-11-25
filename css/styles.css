@@ -166,16 +166,11 @@ body {
     align-content: center;
     margin-right: auto;
     margin-left: auto;
-    background-image: url(../images-2/Hero-bg.svg);
+    /* background-image: url(../images-2/Hero-bg.svg); */
+    background-color: rgba(47, 48, 58, 0.4);;
     width: 1600px;
 }
 
-.hero::before {
-    content: '';
-    display: block;
-    display: flex;
-    background: rgba(47, 48, 58, 0.4);
-}
 .hero-btn {
     font-weight: 700;
     font-size: 16px;
