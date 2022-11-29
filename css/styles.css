@@ -231,6 +231,7 @@ button .hero {
 .about  {
     padding-top: 94px;
     padding-bottom: 94px;
+    display: flex;
 }
 .list-title {
     font-weight: 400;
@@ -554,7 +555,7 @@ button .hero {
 .pane {
     display: none;
 }
-.footer .container .icon-team {
+.footer .container {
     display: flex;
     text-align: center;
     padding-bottom: 30px;
