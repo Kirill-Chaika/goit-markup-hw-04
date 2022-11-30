@@ -121,7 +121,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: #757575;
     text-decoration: none;
 }
 .posted li {
@@ -144,24 +144,28 @@ body {
 .posted a:focus,
 .posted a:active {
     color: var(--brand-color);
-    fill: var(--brand-color);
+    /* fill: var(--brand-color); */
     /* fill: var(--brand-color); */
 }
-.posted a:hover .posted-icon,
-.posted a:focus .posted-icon,
-.posted a:active .posted-icon {
-    fill: var(--brand-color);
-    color: var(--brand-color);
-}
-.posted .posted-icon {
+
+.posted .link .posted-icon{
     display: block;
     align-self: center;
     margin-right: 10px;
+    width: ;
 }
-/* .posted-icon:hover,
-.posted-icon:focus {
-    fill: var(--brand-color) ;
-} */
+.posted .posted-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link .posted-icon > use {
+    fill: currentColor;
+}
+
+
+
 
 /* Hero-main */
 .hero,
