@@ -231,6 +231,7 @@ button .hero {
 .about  {
     padding-top: 94px;
     padding-bottom: 94px;
+    display: block;
     display: flex;
 }
 .list-title {
@@ -243,8 +244,8 @@ button .hero {
     padding-bottom: 20px;
 }
 .about .container-about {
-    width: 270px;
-    height: 120px;
+    width: inherit;
+    height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,6 +253,12 @@ button .hero {
 .icon-about {
     display: flex;
     margin: 
+}
+.about .list li {
+    margin-right: 30px;
+}
+.about .list li:last-child {
+    margin-right: 0;
 }
 
 .list-project {
@@ -263,9 +270,7 @@ button .hero {
     margin-top: 10px;
     /* margin-right: 30px; */
 }
-.list-project:last-child {
-    margin-right: 0;
-}
+
 .section-img li {
     padding-right: 30px;
 }
