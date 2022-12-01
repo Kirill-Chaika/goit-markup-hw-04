@@ -191,7 +191,7 @@ body {
     /* background: rgba(47, 48, 58, 0.4); */
     background-image: url(../images-2/Hero-bg.svg);
     /* background-color: rgba(47, 48, 58, 0.8); */
-    width: 1600px;
+    max-width: 1600px;
 }
 
 
@@ -380,8 +380,8 @@ button .hero {
     flex-wrap: wrap;
     gap: 30px;
 }
-.list-portfolio li:hover,
-.list-portfolio li:focus {
+.list-portfolio .list-portfolio-cards:hover,
+.list-portfolio .llist-portfolio-cards:focus {
     /* border: 1px solid #EEEEEE; */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -395,7 +395,9 @@ button .hero {
 }
 .list-portfolio li a  {
     text-decoration: none;
+    display: block;
 }
+
 .list-portfolio li a .container {
     width: inherit;
     border: 1px solid #EEEEEE;
@@ -433,17 +435,19 @@ button .hero {
     text-align: center;
     padding-bottom: 30px;
 }
-.team .icon-team li {
-    padding: 12px ;
+.team .icon-team a {
+    margin: 12px ;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    
     fill: #AFB1B8;
     /* margin: 0 auto; */
 }
-.team .icon-team li:hover,
-.team .icon-team li:focus {
+.team .icon-team li {
+    margin-right: 10px;
+}
+.team .icon-team li:hover {
     fill: #FFFFFF;
     background-repeat: no-repeat;
     background-image: url(../images-2/Ellipse.svg); 
@@ -598,20 +602,20 @@ button .hero {
     text-transform: uppercase;
     color: var(--text-color);
     margin-bottom: 20px;
+    text-align: left;
 }
-.container-right .icon-team li {
+.container-right .icon-team a {
     padding: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
     fill: var(--text-color);
-    /* background: 50% 50%; */
-    /* margin: 0 auto; */
+    background: 50% 50%;
+        background-image: url(../images-2/Ellipse-2.svg);
 }
 
-.container-right .icon-team li:hover,
-.container-right .icon-team li:focus {
+.container-right .icon-team a:hover {
     fill: var(--text-color);
     background-repeat: no-repeat;
     background-image: url(../images-2/Ellipse.svg);
