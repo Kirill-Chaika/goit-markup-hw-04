@@ -123,6 +123,7 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+    display: flex;
 }
 .posted li {
     margin-right: 50px;
@@ -148,11 +149,10 @@ body {
     /* fill: var(--brand-color); */
 }
 
-.posted .link .posted-icon{
+.posted .posted-icon{
     display: block;
     align-self: center;
     margin-right: 10px;
-    width: ;
 }
 .posted .posted-icon {
     margin-right: 10px;
@@ -160,7 +160,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-.link .posted-icon > use {
+.posted .posted-icon use {
     fill: currentColor;
 }
 
@@ -581,7 +581,39 @@ button .hero {
     display: flex;
     text-align: center;
     padding-bottom: 30px;
-
+    align-items: baseline;
+}
+.container-left {
+    text-align: left;
+    margin-right: 60px;
+}
+.contaainer-right {
+    /* align-items: baseline; */
+}
+.footer-rigth-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.container-right .icon-team li {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    fill: var(--text-color);
+    /* background: 50% 50%; */
+    /* margin: 0 auto; */
 }
 
-
+.container-right .icon-team li:hover,
+.container-right .icon-team li:focus {
+    fill: var(--text-color);
+    background-repeat: no-repeat;
+    background-image: url(../images-2/Ellipse.svg);
+    background-position: 50% 50%;
+}
