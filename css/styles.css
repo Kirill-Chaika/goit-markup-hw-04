@@ -436,26 +436,27 @@ button .hero {
     padding-bottom: 30px;
 }
 .team .icon-team a {
-    margin: 12px ;
+    padding: 12px ;
     display: flex;
     align-items: center;
     justify-content: center;
     
-    fill: #AFB1B8;
+    color: #AFB1B8;
     /* margin: 0 auto; */
 }
 .team .icon-team li {
     margin-right: 10px;
 }
-.team .icon-team a:hover {
+.team .icon-team a:hover,
+.team .icon-team a:focus {
     color: #FFFFFF;
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
     background-repeat: no-repeat;
-    /* background-image: url(../images-2/Ellipse.svg);  */
+    background-image: url(../images-2/Ellipse.svg); 
     background-position: 50% 50%;
 }
 .team .icon-team .icon-time-icon {
-    color: currentColor;
+    fill: currentColor;
 }
 
 .team .container  {
@@ -476,16 +477,17 @@ button .hero {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-.regular-customers ul {
+.regular-customers ul li{
     display: flex;
     margin: 0 auto;
     display: block;
     display: flex;
+    margin-right: 30px;
 }
-.regular-customers ul li {
+.regular-customers ul li a{
     width: 170px;
     height: 92px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
@@ -499,8 +501,8 @@ button .hero {
 .regular-customers ul li:nth-last-child(1) {
     margin-right: 0;
 }
-.regular-customers li:hover,
-.regular-customers li:focus {
+.regular-customers ul li a:hover,
+.regular-customers ul li a:focus {
     /* background-color: #2196F3; */
     border: 1px solid #2196F3;
     border-radius: 4px;
@@ -619,7 +621,8 @@ button .hero {
         background-image: url(../images-2/Ellipse-2.svg);
 }
 
-.container-right .icon-team a:hover {
+.container-right .icon-team a:hover,
+.container-right .icon-team a:focus {
     fill: var(--text-color);
     background-repeat: no-repeat;
     background-image: url(../images-2/Ellipse.svg);
