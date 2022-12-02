@@ -447,11 +447,15 @@ button .hero {
 .team .icon-team li {
     margin-right: 10px;
 }
-.team .icon-team li:hover {
-    fill: #FFFFFF;
+.team .icon-team a:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
     background-repeat: no-repeat;
-    background-image: url(../images-2/Ellipse.svg); 
+    /* background-image: url(../images-2/Ellipse.svg);  */
     background-position: 50% 50%;
+}
+.team .icon-team .icon-time-icon {
+    color: currentColor;
 }
 
 .team .container  {
